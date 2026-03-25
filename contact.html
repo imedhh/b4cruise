@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now — B4Cruise | Contact & Reservations</title>
+  <meta name="description" content="Book your pre or post cruise stay at South Beach. Contact our group sales team for packages and reservations.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav-solid">
+    <a href="index.html" class="nav-logo"><span class="b4">B4</span><span class="dot"></span><span class="cruise">Cruise</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=80') center/cover no-repeat;opacity:0.15;"></div>
+    <div class="page-hero-content">
+      <p class="section-label">Get in Touch</p>
+      <h1 class="section-title" style="color:#fff;">Book Your<br>Cruise Stay</h1>
+      <p class="section-body">Whether you need a single room or a block of 50, our cruise package team will craft the perfect arrangement.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking">
+    <div class="booking-bg"></div>
+    <div class="booking-grid">
+      <div class="booking-info reveal">
+        <p class="section-label">Contact Information</p>
+        <h2 class="section-title">We're Here<br>to Help</h2>
+        <p class="section-body">Our dedicated cruise package team is available to assist you with reservations, group bookings, corporate contracts, and custom arrangements.</p>
+        <div class="booking-contact-item">
+          <h4>Group Sales</h4>
+          <p><a href="mailto:groupsales@breakwatersouthbeach.com">groupsales@breakwatersouthbeach.com</a></p>
+        </div>
+        <div class="booking-contact-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+17868263786">+1 (786) 826-3786</a></p>
+        </div>
+        <div class="booking-contact-item">
+          <h4>Breakwater South Beach</h4>
+          <p>940 Ocean Drive, Miami Beach FL 33139</p>
+        </div>
+        <div class="booking-contact-item">
+          <h4>Townhouse South Beach</h4>
+          <p>150 20th Street, Miami Beach FL 33139</p>
+        </div>
+      </div>
+      <div class="booking-form reveal">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+1 (555) 000-0000">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Package Interest</label>
+            <select>
+              <option value="">Select a package</option>
+              <option>Pre-Cruise Experience</option>
+              <option>Post-Cruise Recovery</option>
+              <option>Crew Layover Contract</option>
+              <option>Corporate Stay</option>
+              <option>Turn-Around Day Use</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Number of Rooms</label>
+            <input type="number" placeholder="1" min="1">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Hotel</label>
+            <select>
+              <option value="">No preference</option>
+              <option>Breakwater South Beach</option>
+              <option>Townhouse South Beach</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Cruise Line</label>
+            <input type="text" placeholder="e.g. Royal Caribbean">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Check-in Date</label>
+            <input type="date">
+          </div>
+          <div class="form-group">
+            <label>Check-out Date</label>
+            <input type="date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your cruise schedule, group size, or any special requests..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit(this)">Send Inquiry &#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="b4">B4</span><span class="dot"></span><span class="cruise">Cruise</span></div>
+        <p>Luxury pre & post cruise accommodations on Ocean Drive, Miami Beach.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Properties</h4>
+        <ul>
+          <li><a href="hotels.html">Breakwater South Beach</a></li>
+          <li><a href="hotels.html">Townhouse South Beach</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Packages</h4>
+        <ul>
+          <li><a href="packages.html">Pre-Cruise Stay</a></li>
+          <li><a href="packages.html">Post-Cruise Recovery</a></li>
+          <li><a href="packages.html">Crew Contracts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17868263786">+1 (786) 826-3786</a></li>
+          <li><a href="mailto:groupsales@breakwatersouthbeach.com">Group Sales Email</a></li>
+          <li><a href="contact.html">Booking Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 B4Cruise. All rights reserved.</span>
+      <span>940 Ocean Drive, Miami Beach FL 33139</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
